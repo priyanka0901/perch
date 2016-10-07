@@ -22,11 +22,11 @@ html , body{
 	height: 70px;
 	width:50%;
 	position: fixed;
-	z-index: 6;
+	z-index: 200;
 }
 .navbar.scrolled {
-    background-color: rgb(45, 45, 45); 
-    background-color: rgba(0, 0, 0, 0.7); 
+    background: rgb(255,255,255); 
+    background: rgba(255,255,255,0.9); 
 }
 .logo img{
 	margin: 20px 30px;

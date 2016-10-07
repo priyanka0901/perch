@@ -247,9 +247,9 @@
 <script type="text/javascript">
 
    function checkScroll(){
-    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+    var startY = $('.navbar').height()  ; //The point where the navbar changes in px
 
-    if($(window).scrollTop() > startY){
+    if($('.container').scrollTop() > startY){
         $('.navbar').addClass("scrolled");
     }else{
         $('.navbar').removeClass("scrolled");
@@ -257,12 +257,12 @@
 }
 
 if($('.navbar').length > 0){
-    $(window).on("scroll load resize", function(){
+    $('.container').on("scroll load resize", function(){
         checkScroll();
     });
 }
 
-   
+
    $('.menu').on("click",function(){
    	if($('.menu-hide').css('right')== '50px'){
  		$('.menu-hide').animate({
